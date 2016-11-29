@@ -1,0 +1,7 @@
+package core.sheard.test;
+
+public class StudentFactory {
+
+	private StudentFactory instance;
+	private StudentFactory(){}
+}

@@ -1,0 +1,24 @@
+package core.manager.test;
+
+import java.util.List;
+
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+
+import core.dao.test.StudentDAO;
+import core.model.test.Student;
+
+@Stateless
+public class DefaultStudentManager implements StudentManager {
+
+	@Inject
+	private StudentDAO studentDAO;
+	
+	@Override
+	public List<Student> getAllStudent(){ return studentDAO.getAllStudent();}
+
+	@Override
+	public void createStudent(Student std){ studentDAO.createStudent(std);}
+	
+	public void showStudent(Student std){}
+}

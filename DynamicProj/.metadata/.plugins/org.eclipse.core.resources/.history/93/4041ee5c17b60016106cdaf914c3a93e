@@ -1,0 +1,5 @@
+package core.manager.test;
+
+public class DefaultStudentManager {
+
+}

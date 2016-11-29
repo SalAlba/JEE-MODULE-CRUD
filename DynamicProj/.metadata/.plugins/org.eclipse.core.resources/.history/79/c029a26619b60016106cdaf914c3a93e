@@ -1,0 +1,21 @@
+package web.managed.test;
+
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Named;
+
+import core.model.test.Student;
+
+import java.io.Serializable;
+
+@Named
+@SessionScoped
+public class DefaultStudentActionBean implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	private Student std;
+
+}

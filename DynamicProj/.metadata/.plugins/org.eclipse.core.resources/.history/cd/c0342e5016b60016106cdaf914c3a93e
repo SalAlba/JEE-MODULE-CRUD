@@ -1,0 +1,11 @@
+package core.dao.test;
+
+import javax.ejb.Stateless;
+import javax.persistence.EntityManager;
+
+@Stateless
+public class DefaultStudentDAO {
+
+	@PersistenceContext
+	private EntityManager em;
+}

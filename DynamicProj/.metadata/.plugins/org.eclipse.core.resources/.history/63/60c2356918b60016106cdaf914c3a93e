@@ -1,0 +1,13 @@
+package core.sheard.test;
+
+import core.model.test.Student;
+
+public class StudentFactory {
+
+	private StudentFactory instance;
+	private Student std;
+	private StudentFactory(){}
+	
+	public StudentFactory getInstance(){ return instance != null ? instance : new StudentFactory();}
+	public Student getStudent(){}
+}

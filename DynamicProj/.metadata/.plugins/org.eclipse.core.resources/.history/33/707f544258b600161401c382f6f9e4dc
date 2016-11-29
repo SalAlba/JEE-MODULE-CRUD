@@ -1,0 +1,28 @@
+package core.dao.test;
+
+import java.util.List;
+
+import javax.ejb.Stateless;
+import javax.persistence.*;
+
+import core.model.test.Student;
+
+@Stateless
+public class DefaultStudentDAO implements StudentDAO {
+
+	@PersistenceContext
+	private EntityManager em;
+	
+	@Override
+	@SuppressWarnings("unchecked")
+	public List<Student> getAllStudent(){ 
+		return em.createNamedQuery("DefaultStudent.findAll").getResultList(); 
+	}
+	
+	@Override
+	public void createStudent(Student std){em.persist(std);}
+	
+	public Student showStudent(Student std){
+		
+	}
+}

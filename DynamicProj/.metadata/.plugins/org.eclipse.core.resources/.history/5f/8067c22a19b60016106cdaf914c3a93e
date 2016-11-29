@@ -1,0 +1,5 @@
+package web.managed.test;
+
+public class DefaultStudentActionBean {
+
+}

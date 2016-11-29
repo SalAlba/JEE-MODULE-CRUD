@@ -1,0 +1,16 @@
+package core.model.test;
+
+public interface Student {	
+
+	public int getId() ;
+
+	public void setId(int id);
+
+	public String getEmail();
+
+	public void setEmail(String email);
+
+	public String getName();
+
+	public void setName(String name);
+}

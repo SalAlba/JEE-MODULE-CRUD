@@ -1,0 +1,10 @@
+1480411306782	Rename package 'core.impl.model.test'
+1480411377907	Extract interface 'Student'
+1480411550707	Move compilation unit
+1480411916521	Extract interface 'StudentDAO'
+1480411947599	Move compilation unit
+1480412323515	Extract interface 'StudentManager'
+1480412330949	Move compilation unit
+1480416986820	Delete element
+1480417071490	Move compilation unit
+1480417074079	Delete element

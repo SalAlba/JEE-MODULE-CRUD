@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="proj-test">
+        <wb-resource deploy-path="/" source-path="/EarContent" tag="defaultRootSource"/>
+        <dependent-module archiveName="core-impl-test.jar" deploy-path="/" handle="module:/resource/core-impl-test/core-impl-test">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="core-api-test.jar" deploy-path="/lib" handle="module:/resource/core-api-test/core-api-test">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="core-sheard-test.jar" deploy-path="/" handle="module:/resource/core-sheard-test/core-sheard-test">
+            <dependent-object/>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="web-impl-test.war" deploy-path="/" handle="module:/resource/web-impl-test/web-impl-test">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>

@@ -1,0 +1,54 @@
+package web.managed.test;
+
+//import javax.enterprise.context.RequestScoped;
+import javax.enterprise.context.SessionScoped;
+import javax.inject.Inject;
+import javax.inject.Named;
+
+import core.manager.test.StudentManager;
+import core.model.test.Student;
+import core.sheard.test.StudentFactory;
+
+import java.io.Serializable;
+import java.util.List;
+
+@Named
+@SessionScoped
+public class DefaultStudentActionBean implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
+	@Inject
+	private StudentManager studentManager; 
+	
+	private Student std= StudentFactory.getInstance().getStudent();
+
+	public Student getStd() { return std; }
+
+	public void setStd(Student std) { this.std = std; }
+	
+	public List<Student> getAllStudent(){ return studentManager.getAllStudent(); }
+	
+	public String createStudent(){
+		studentManager.createStudent(std);
+		return "index";
+	}
+	
+	public String showStuden(int id){
+		std=studentManager.showStudent(id);
+		return "view";
+	}
+	
+	public void deleteUser(int id){ studentManager.deleteUser(id);}
+	
+	public String updateStudent(Student std){this.std=std; return"edit";}
+	public String updateStudent(){		
+		Student tmp=StudentFactory.getInstance().getStudent();
+		tmp.setId(this.std.getId());	
+//		userDAO.updateUser(tmp); 
+		return "index";
+	}
+}

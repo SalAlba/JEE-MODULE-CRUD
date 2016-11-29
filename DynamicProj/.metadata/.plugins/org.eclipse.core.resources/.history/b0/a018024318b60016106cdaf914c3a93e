@@ -1,0 +1,10 @@
+package core.sheard.test;
+
+public class StudentFactory {
+
+	private StudentFactory instance;
+	private StudentFactory(){}
+	
+	public StudentFactory getInstance(){ return (instance != null)? instance : new StudentFactory();}
+	
+}

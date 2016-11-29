@@ -1,0 +1,13 @@
+package core.manager.test;
+
+import java.util.List;
+
+import core.model.test.Student;
+
+public interface StudentManager {
+
+	List<Student> getAllStudent();
+
+	void createStudent(Student std);
+
+}

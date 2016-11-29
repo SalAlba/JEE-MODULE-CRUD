@@ -1,0 +1,13 @@
+package core.manager.test;
+
+import javax.ejb.Stateless;
+import javax.inject.Inject;
+
+import core.dao.test.StudentDAO;
+
+@Stateless
+public class DefaultStudentManager {
+
+	@Inject
+	private StudentDAO studentDAO;
+}

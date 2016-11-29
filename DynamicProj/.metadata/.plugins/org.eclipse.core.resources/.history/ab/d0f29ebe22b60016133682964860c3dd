@@ -1,0 +1,5 @@
+package core.model.test;
+
+public interface Student {
+
+}

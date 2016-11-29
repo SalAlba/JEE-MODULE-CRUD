@@ -1,0 +1,8 @@
+package core.manager.test;
+
+import javax.ejb.Stateless;
+
+@Stateless
+public class DefaultStudentManager {
+
+}
